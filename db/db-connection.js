@@ -28,6 +28,7 @@ class DBConnection {
                 }
             }
             if (connection) {
+                console.log('connected to db');
                 connection.release();
             }
             return

@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const coach = require('./routes/coach.routes'); // Imports routes for the products
+const HttpException = require('./utils/HttpException.utils');
+const coach = require('./routes/coach.routes');
 require('dotenv').config();
 
 // initialize our express app
