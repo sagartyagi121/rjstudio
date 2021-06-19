@@ -43,6 +43,12 @@ class CoachModel {
 
         return slots;
     }
+
+    bookASlot = async (name, from, to ) => {
+        let sql = `SELECT * FROM ${this.tableName} WHERE Available_at <= '${from}'  AND Available_until >= '${to}' AND UPPER(name) = UPPER('${name}')`
+        let count = await query(sql);
+        return count;
+    }
 }
 
 function makeTime(beginTime) {

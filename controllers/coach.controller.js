@@ -24,8 +24,9 @@ exports.coach_available_slots = async (req, res, next) => {
 }
 
 exports.coach_bookslot = async (req, res, next) => {
-  let spotBooked = CoachModel.bookASlot(req.body.name, req.body.from, req.body.to);
-  if (spotBooked) res.send('{"message": "spot booked"}')
-  else res.send('{"message":"error in booking"}')
-
+  
+  let spotBooked = await CoachModel.bookASlot(req.body.name, req.body.from, req.body.to);
+  console.log(spotBooked,'thisss');
+  if (spotBooked.length !== 0 ) res.send('{"message": "spot booked"}')
+  else res.send('{"message":"Spot not available"}')
 }

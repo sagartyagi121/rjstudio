@@ -15,4 +15,7 @@ router.get('/', coach_controller.coach_list);
 // slots available
 router.get('/avaslots/:name', coach_controller.coach_available_slots);
 
+// book a slot
+router.post('/book', coach_controller.coach_bookslot);
+
 module.exports = router;

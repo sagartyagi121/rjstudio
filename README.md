@@ -1,5 +1,16 @@
 # rjstudio
 
 
-1. get list of coaches - http://localhost:3030/coach/
-2. get time slots by name coach name - http://localhost:3030/coach/avaslots/:name
+
++---------+------------------------------+--------------------------------+
+| Methods |             Urls             |            Actions             |
++---------+------------------------------+--------------------------------+
+| Get     | /coach/                      | Get all coaches                |
+| Get     | /coach/avaslots/:name        | Get slots by caoch names       |
+| Post    | /coach/book                  | Book a slot                    |
++---------+------------------------------+--------------------------------+
+
+
+ ![First API req](./img/1.jpeg)
+ ![Second API req](./img/1.jpeg)
+ ![Third API req](./img/1.jpeg)

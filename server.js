@@ -8,6 +8,12 @@ require('dotenv').config();
 const app = express();
 const port = Number(process.env.PORT || 3030);
 
+// For parsing application/json
+app.use(express.json());
+  
+// For parsing application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true }));
+
 app.use('/coach', coach);
 
 // 404 error
