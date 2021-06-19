@@ -1,0 +1,26 @@
+{
+  "name": "coachschd",
+  "version": "0.1.0",
+  "description": "REST API to fetch coach schedules and book and appoinment",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagartyagi121/rjstudio.git"
+  },
+  "keywords": [
+    "rjstudio",
+    "coach"
+  ],
+  "author": "gajender",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagartyagi121/rjstudio/issues"
+  },
+  "homepage": "https://github.com/sagartyagi121/rjstudio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
