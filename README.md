@@ -10,6 +10,7 @@
 3.  You should have a .env file similar to ./.env.example in the project root
 3.  npm start   - for production and testing 
 4.  npm run dev - for development 
+5.  npm test - for testing 
 
 ```
 
