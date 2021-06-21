@@ -34,4 +34,3 @@ describe('Get Endpoints', () => {
       expect(res.body[1].slotnumbers).toEqual("16.0000")
     })
   })
-
